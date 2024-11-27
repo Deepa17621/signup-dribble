@@ -10,7 +10,6 @@ body{
     font-weight: 100; */
     font-style: normal;
   }
-
   /* Common Style For Both Devices Listed Here */
 .google-SignUP-Btn>i{
     position: absolute;
@@ -181,6 +180,14 @@ body{
         width: 97%;
         border-radius: 5px;
     } */
+    .success{
+        border: 1px solid greenyellow;
+        border-radius: 5px;
+      }
+      .error{
+        border: 1px solid red;
+        border-radius: 5px;
+      }
     .nameWrapper>div{
         margin-bottom: 6%;
         /* display: flex;
@@ -381,6 +388,19 @@ body{
     .row{
         margin-bottom: 10px;
     }
+    .success{
+        border: 1px solid greenyellow;
+        border-radius: 5px;
+      }
+      .error{
+        border: 1px solid red;
+        border-radius: 5px;
+      }
+      .err{
+        font-size: 8px;
+        color: red;
+        font-weight: 300;
+      }
     .signUpWithOtherAccounts{
         margin-bottom: 10px;
         display: flex;
