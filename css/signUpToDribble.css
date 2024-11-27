@@ -77,16 +77,16 @@ body{
     .topic{
         font-weight: 700;
         font-size:xx-large;
-
-        /* width: 100%; */
-        /* padding: 8% 20%; */
     }
     .image{
         padding-left: 5%;
+
+        margin-bottom: 10%;
+
     }
     .image>img{
-        width: 125%;
-        margin-top: -10%;
+        display: inline-block;
+        width: 135%;
     }
     .artist{
         font-size: x-small;
@@ -102,12 +102,9 @@ body{
     .main{
         height: 100%;
         width: 100%;   /*42 vh*/
-        /* border-radius: 0px 7px 7px 0px; */
         display: flex;
         flex-direction: column;
         align-items: center;
-        /* justify-content: center; */
-        flex-wrap: wrap;
         background-color: white;
         position: relative;
     }
@@ -121,7 +118,7 @@ body{
     .formElement{
         width:  80%;
         height: 70%;
-        margin-bottom: 20%;
+        /* margin-bottom: 20%; */
         flex-wrap: wrap;
         /* border: 1px solid black; */
         font-size: small;
@@ -197,14 +194,7 @@ body{
         color: red;
         font-weight: 400;
       }
-    .nameWrapper>div{
-        margin-bottom: 6%;
-        /* display: flex;
-        flex-direction: column;
-        gap: 10px;
-        justify-content: space-between; */
-    }
-    .row{
+    .row, .nameWrapper>div{
         margin-bottom: 6%;
     }
     .signUpWithOtherAccounts{
@@ -217,7 +207,7 @@ body{
     }
     .termsAndConditions>input{
         float: left;
-        clear: right;
+        margin-right: 2px;
     }
     .termsAndConditions{
         font-size: x-small;
@@ -225,8 +215,14 @@ body{
     a{
         text-decoration: none;
     }
+    .btnWrapper{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     .createBtn{
-        width: 60%;
+        width: 65%;
         /* margin-top: 5%; */
         border-radius: 3px;
         padding: 8px;
@@ -235,10 +231,9 @@ body{
         color: white;
         font-weight: 600;
         border: none;
-        align-items: center;
+        cursor: pointer;
         &:hover{
-            cursor: pointer;
-            background-color: rgb(248, 11, 145);
+            background-color: rgb(253, 6, 146);
         }
     }
 
@@ -247,7 +242,7 @@ body{
         width: 80%;
         text-align: center;
         /* margin-left: 10%; */
-        /* margin-bottom: 5%; */
+        margin-bottom: 5%;
     }
 }
 @media only screen and (min-width:781px){
@@ -317,7 +312,6 @@ body{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        /* overflow-x: auto; */
         background-color: white;
         position: relative;
     }
@@ -333,6 +327,9 @@ body{
         font-size: small;
         /* display: inline-block; */
         margin: auto;
+    }
+    .title{
+        padding: 2% 0%;
     }
     .google-SignUP-Btn{
         width: 70%;
@@ -372,7 +369,7 @@ body{
         padding:5px 0 5px 10px ;
         border: none;
         font-size: small;
-        border-radius: 2px;
+        border-radius: 4px;
         outline: none;
         background-color: rgb(215, 212, 212, 0.5);
     }
@@ -380,7 +377,7 @@ body{
         border: 1px solid rgb(74, 125, 220);
     }
     .fullWidthInp{
-        width: 100%;
+        width: 96%;
     }
     .nameWrapper{
         display: flex;
@@ -388,15 +385,13 @@ body{
         /* gap: 10px; */
     }
     .fullNameContainer{
-        margin-right: 10%;
+        margin-right: 6%;
     }
     .nameWrapper input{
         display: inline-block;
-        width: 100%;
+        width: 91%;
     }
-    .row{
-        margin-bottom: 10px;
-    }
+    
     .success{
         border: 1px solid greenyellow;
         border-radius: 5px;
@@ -417,13 +412,17 @@ body{
     }
     .termsAndConditions>input{
         float: left;
-        clear: right;
+        /* clear: right; */
     }
     .termsAndConditions{
         font-size: x-small;
+        margin-top: 5%;
     }
     a{
         text-decoration: none;
+    }
+    .row{
+        margin-bottom: 10px;
     }
     .createBtn{
         width: 48%;
@@ -438,11 +437,12 @@ body{
             cursor: pointer;
             background-color: rgb(248, 11, 145);
         }
+        margin-top: 5%;
     }
     .rightFooter{
         font-size: xx-small;
         width: 40%;
-        margin-left: 26%;
+        padding-left: 20%;
         margin-bottom:6%;
     }
 }

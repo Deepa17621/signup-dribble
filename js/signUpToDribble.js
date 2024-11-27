@@ -80,8 +80,7 @@ function validateFields(){
     if(!termsAndConditions.checked){
         termsAndConditions.style.cssText = `border: 2px solid red;
                                             height: 15px;
-                                            width: 15px`
-                                            alert("allow term")
+                                            width: 15px;`
                                             return;
     }
     console.log(fullNameValue);
