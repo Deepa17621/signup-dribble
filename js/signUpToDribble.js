@@ -69,7 +69,7 @@ function validateFields(){
     const userNameValue = userName.value;
     const passwordValue = password.value.trim();
     const emailValue = email.value.trim();
-    
+ 
     !(fullNameValue) ? setError(fullName, "required") : setSuccess(fullName);
     !(userNameValue) ? setError(userName, "required") : setSuccess(userName);
 
