@@ -1,4 +1,4 @@
-let google = document.querySelector(".google-SignUp-Btn");
+// let google = document.querySelector(".google-SignUp-Btn");
 let twitter = document.querySelector(".twitter");
 let faceBook = document.querySelector(".facebook");
 let createBtn = document.querySelector(".createBtn");
@@ -10,8 +10,15 @@ let email = document.querySelector("#email");
 let password = document.querySelector("#password");
 let termsAndConditions = document.querySelector("#termsConditions");
 
-let arr = [ fullName, userName, email, password];
-arr.forEach((ele)=>{
+createBtn.addEventListener("click", (e)=>{
+    e.preventDefault();
+    formElement.requestSubmit();
+});
+
+formElement.addEventListener("submit", e=>{
+    e.preventDefault();
+    let arr = [ fullName, userName, email, password];
+    arr.forEach((ele)=>{
     ele.addEventListener('input', (e)=>{
         e.preventDefault();
         if(!ele.value){
@@ -29,13 +36,6 @@ arr.forEach((ele)=>{
         e.stopPropagation()
     })
 })
-createBtn.addEventListener("click", (e)=>{
-    e.preventDefault();
-    formElement.requestSubmit();
-});
-
-formElement.addEventListener("submit", e=>{
-    e.preventDefault();
     if(validateFields()){
         alert("Successfully submited!")
         e.target.reset();
