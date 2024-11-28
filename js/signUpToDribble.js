@@ -36,8 +36,12 @@ createBtn.addEventListener("click", (e)=>{
 
 formElement.addEventListener("submit", e=>{
     e.preventDefault();
-    validateFields();
-    e.stopPropagation()
+    if(validateFields()){
+        alert("Successfully submited!")
+        e.target.reset();
+        location.reload();
+    }
+    
 })
 
 const setError = (ele, message)=>{
@@ -87,6 +91,7 @@ function validateFields(){
     console.log(passwordValue);
     console.log(userNameValue);
     console.log(emailValue); 
+    return true;
 }
 window.onload = ()=>{
     formElement.reset();
